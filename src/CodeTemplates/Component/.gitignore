@@ -6,10 +6,9 @@ vagrant
 
 # composer
 vendor/
+composer.lock
 
 # locally generated docs
 build/api/
 build/phpdox/
 build/logs/
-build/icehawk-ctg.phar
-build/icehawk-ctg.phar.asc

@@ -1,36 +1,31 @@
 {
-	"name": "icehawk/component-template-generator",
-	"description": "A generator tool for IceHawk components",
+	"name": "__COMPOSER_NAME__",
+	"description": "__DESCRIPTION__",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Holger Woltersdorf",
-			"email": "hw@hollo.me"
+			"name": "__AUTHOR__"
 		}
 	],
 	"support": {
-		"email": "hw@hollo.me",
-		"source": "https://github.com/icehawk/component-template-generator"
+		"source": "https://github.com/__COMPOSER_NAME__"
 	},
 	"require": {
-		"php": ">=7.0",
-		"symfony/console": "^3.1",
-		"psr/log": "^1.0",
-		"padraic/phar-updater": "^1.0"
+		"php": ">=7.0"
 	},
 	"require-dev": {
 		"tm/tooly-composer-script": "^0.1.1"
 	},
 	"autoload": {
 		"psr-4": {
-			"IceHawk\\ComponentTemplateGenerator\\": "src/"
+			"__NAMESPACE_ESCAPED__\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"IceHawk\\ComponentTemplateGenerator\\Tests\\": "tests/"
+			"__NAMESPACE_ESCAPED__\\Tests\\": "tests/"
 		}
 	},
 	"scripts": {
@@ -63,8 +58,12 @@
 				"url": "https://phar.phpunit.de/phpcpd.phar",
 				"only-dev": true
 			},
-			"box": {
-				"url": "https://github.com/box-project/box2/releases/download/2.7.2/box-2.7.2.phar",
+			"phpdox": {
+				"url": "https://github.com/theseer/phpdox/releases/download/0.8.1.1/phpdox-0.8.1.1.phar",
+				"only-dev": true
+			},
+			"coveralls": {
+				"url": "https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar",
 				"only-dev": true
 			}
 		}
