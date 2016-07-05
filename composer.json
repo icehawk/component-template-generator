@@ -1,0 +1,69 @@
+{
+	"name": "icehawk/component-template-generator",
+	"description": "A generator tool for IceHawk components",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Holger Woltersdorf",
+			"email": "hw@hollo.me"
+		}
+	],
+	"support": {
+		"email": "hw@hollo.me",
+		"source": "https://github.com/icehawk/component-template-generator"
+	},
+	"require": {
+		"php": ">=7.0"
+	},
+	"require-dev": {
+		"tm/tooly-composer-script": "^0.1.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"IceHawk\\ComponentTemplateGenerator\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"IceHawk\\ComponentTemplateGenerator\\Tests\\": "tests/"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": "Tooly\\ScriptHandler::installPharTools",
+		"post-update-cmd": "Tooly\\ScriptHandler::installPharTools"
+	},
+	"extra": {
+		"tools": {
+			"phpunit": {
+				"url": "https://phar.phpunit.de/phpunit.phar",
+				"only-dev": true
+			},
+			"phploc": {
+				"url": "https://phar.phpunit.de/phploc.phar",
+				"only-dev": true
+			},
+			"pdepend": {
+				"url": "https://static.pdepend.org/php/latest/pdepend.phar",
+				"only-dev": true
+			},
+			"phpmd": {
+				"url": "https://static.phpmd.org/php/latest/phpmd.phar",
+				"only-dev": true
+			},
+			"phpcs": {
+				"url": "https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar",
+				"only-dev": true
+			},
+			"phpcpd": {
+				"url": "https://phar.phpunit.de/phpcpd.phar",
+				"only-dev": true
+			},
+			"box": {
+				"url": "https://github.com/box-project/box2/releases/download/2.7.2/box-2.7.2.phar",
+				"only-dev": true
+			}
+		}
+	}
+}
