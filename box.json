@@ -1,13 +1,21 @@
 {
-	"blacklist": [
-		"vendor/bin/",
-		"vendor/tm/"
-	],
 	"chmod": "0755",
 	"compression": "GZ",
 	"directories": [
-		"src/",
-		"vendor/"
+		"src/"
+	],
+	"files": [
+		"LICENSE"
+	],
+	"finder": [
+		{
+			"name": "*.php",
+			"exclude": [
+				"bin",
+				"tm"
+			],
+			"in": "vendor"
+		}
 	],
 	"extract": false,
 	"git-version": "package_version",
@@ -15,7 +23,6 @@
 	"main": "bin/main.php",
 	"metadata": "A generator tool for IceHawk components",
 	"output": "build/icehawk-ctg.phar",
-	"replacements": [],
 	"shebang": "#!/usr/bin/env php",
 	"stub": true
 }
