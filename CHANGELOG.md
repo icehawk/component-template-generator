@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a CHANGELOG](http://keepachangelog.com).
 
+## [1.0.2] - 2016-07-09
+
+### Changed
+
+- Replaced some phar tools by [phpMetrics](http://www.phpmetrics.org)
+- Raised vagrant box version to devops007 v1.2.1
+
 ## [1.0.1] - 2016-07-07
 
 ### Added
@@ -24,4 +31,5 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a CH
 - self-update command
 - rollback command
 
+[1.0.2]: https://github.com/icehawk/component-template-generator/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/icehawk/component-template-generator/compare/v1.0.0...v1.0.1
