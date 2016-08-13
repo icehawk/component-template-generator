@@ -9,6 +9,11 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a CH
 
 - Updated Travis-CI config
 - Updated composer dependencies
+- Using PHP comactor when boxing
+
+### Fixed
+
+- Including code templates starting with "." when boxing
 
 ## [1.0.2] - 2016-07-09
 

@@ -1,11 +1,17 @@
 {
 	"chmod": "0755",
 	"compression": "GZ",
+	"compactors": [
+		"Herrera\\Box\\Compactor\\Php"
+	],
 	"directories": [
 		"src/"
 	],
 	"files": [
-		"LICENSE"
+		"LICENSE",
+		"src/CodeTemplates/Component/.coveralls.yml",
+		"src/CodeTemplates/Component/.gitignore",
+		"src/CodeTemplates/Component/.travis.yml"
 	],
 	"finder": [
 		{
