@@ -1,4 +1,4 @@
-.idea
+.idea/
 
 # vagrant
 .vagrant/
@@ -6,7 +6,6 @@ vagrant
 
 # composer
 vendor/
-composer.lock
 
 # locally generated docs
 build/api/
